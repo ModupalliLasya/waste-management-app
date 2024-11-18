@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waste Management Gamification</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <h1>Waste Management Gamification</h1>
+        <p>Join the community in responsible waste disposal and earn rewards!</p>
+        
+        <!-- User Profile Section -->
+        <div class="user-section">
+            <input type="text" id="username" placeholder="Enter your username" />
+            <button onclick="createUser()">Create Profile</button>
+            <button onclick="getUserInfo()">View Profile</button>
+        </div>
+
+        <!-- Points and Badges Section -->
+        <div id="user-info">
+            <h2>Your Profile</h2>
+            <p id="profile-name">Username: <span></span></p>
+            <p id="profile-points">Points: <span>0</span></p>
+            <p id="profile-badges">Badges: <span>None</span></p>
+        </div>
+
+        <!-- Actions Section -->
+        <div class="action-section">
+            <button onclick="addPoints()">Add Points</button>
+            <button onclick="resetPoints()">Reset Points</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
